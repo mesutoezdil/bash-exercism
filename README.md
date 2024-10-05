@@ -53,3 +53,44 @@
      ```bash
      exercism submit hello_world.sh
      ```
+------
+To send all changes to your GitHub repository from VS Code, follow these steps:
+
+### 1. **Check for Changes**
+First, see what files have been modified or added:
+```bash
+git status
+```
+This will show you a list of all changed files.
+
+### 2. **Stage All Changes**
+To stage all changes in the current directory:
+```bash
+git add .
+```
+This will add all modified and new files to the staging area. If you want to add a specific file, use:
+```bash
+git add filename.sh
+```
+
+### 3. **Commit the Changes**
+Commit your staged changes with a descriptive message:
+```bash
+git commit -m "Describe the changes made"
+```
+For example:
+```bash
+git commit -m "Updated hello_world.sh with a new message"
+```
+
+### 4. **Push the Changes to GitHub**
+Push your changes to the `main` branch (or the branch you are working on):
+```bash
+git push origin main
+```
+
+### Summary
+To quickly send all changes to your GitHub repo:
+1. **Stage all changes:** `git add .`
+2. **Commit changes:** `git commit -m "Your message here"`
+3. **Push to GitHub:** `git push origin main`
